@@ -1,0 +1,56 @@
+$nyanza: #edffd9;
+$background: #1e1f24;
+$orange: #f86555;
+$nyanza: #edffd9;
+
+* {
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: $background;
+}
+
+.form-container {
+  display:flex;
+  flex-direction:column;
+  box-sizing:border-box;
+  padding:20px;
+  width:430px;
+  height:575px;
+  background-color:white;
+}
+
+form {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items:center;
+  flex-wrap:wrap;
+  width:100%;
+  height:50%;
+  grid-gap:2em;
+}
+
+.test{
+  display:flex;
+  flex-direction:column;
+}
+
+label {
+  color:black;
+}
+
+input[type=text] {
+  width:150px;
+  height:20px;
+}
+
+button{
+  width:20%;
+}
