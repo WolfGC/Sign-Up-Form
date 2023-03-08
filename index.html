@@ -6,41 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css"
+    />
     <script src="./script.js" defer></script>
   </head>
   <body>
     <div class="form-container">
       <h1>Form Sample</h1>
-      <ul>
-        <li>Sign Up</li>
-        <li>Sign In</li>
-      </ul>
+      <h2>Sign Up</h2>
       <form action="">
-        <div class="test">
-          <label for="first_name">First Name :</label>
-          <input type="text" id="first_name" />
+        <div class="name-groups"></div>
+        <div class="name-group">
+          <div class="form-group">
+            <label for="first_name"></label>
+            <input
+              type="text"
+              id="first_name"
+              placeholder="First Name"
+              autocomplete="off"
+            />
+            <i class="input-icon uil uil-user"></i>
+          </div>
+          <div class="form-group">
+            <label for="last_name"></label>
+            <input
+              type="text"
+              id="last_name"
+              placeholder="Last Name"
+              autocomplete="off"
+            />
+            <i class="input-icon uil uil-user-plus"></i>
+          </div>
         </div>
-        <div class="test">
-          <label for="last_name">Last Name :</label>
-          <input type="text" id="last_name" />
+
+        <div class="form-group">
+          <label for="last_name"></label>
+          <input
+            type="text"
+            id="last_name"
+            placeholder="Email"
+            autocomplete="off"
+          />
+          <i class="input-icon uil uil-at"></i>
         </div>
-        <div class="test">
-          <label for="DOB">DOB :</label>
-          <input type="text" id="DOB" />
+        <div class="form-group">
+          <label for="password"></label>
+          <input
+            type="text"
+            id="password"
+            placeholder="Password"
+            autocomplete="off"
+          />
+          <i class="input-icon uil uil-padlock"></i>
         </div>
-        <div class="test">
-          <label for="phone_number">Phone Number :</label>
-          <input type="text" id="phone_number" />
+        <div class="form-group">
+          <label for="confirm_password"></label>
+          <input
+            type="text"
+            id="confirm_password"
+            placeholder="Confirm Password"
+            autocomplete="off"
+          />
+          <i class="input-icon uil uil-shield-check"></i>
         </div>
-        <div class="test">
-          <label for="password">Password :</label>
-          <input type="text" id="password" />
+        <div class="form-group">
+          <button>Create an Account</button>
         </div>
-        <div class="test">
-          <label for="confirm_password">Confirm Password :</label>
-          <input type="text" id="confirm_password" />
-        </div>
-        <button>Create an Account</button>
       </form>
     </div>
   </body>
