@@ -1,6 +1,6 @@
 $nyanza: #edffd9;
 $background: #1e1f24;
-$input-background:#1f2029;
+$input-background: #1f2029;
 $orange: #f86555;
 $yellow: #ffeba7;
 $text: #c4c3ca;
@@ -53,7 +53,8 @@ form {
   grid-gap: 0.5em;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="password"] {
   box-sizing: border-box;
   padding: 13px 20px;
   padding-left: 55px;
@@ -66,7 +67,7 @@ input[type="text"] {
   letter-spacing: 0.5px;
   outline: none;
   color: $text;
-  background-color:$input-background;
+  background-color: $input-background;
   border: none;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
@@ -103,15 +104,21 @@ button {
   background-color: $yellow;
   color: $background;
   box-shadow: 0 8px 24px 0 rgba(255, 235, 167, 0.2);
-}
-button:active,
-button:focus {
-  background-color: $nyanza;
-  color: $background;
-  box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
-}
-button:hover {
-  background-color: $nyanza;
-  color: $background;
-  box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+
+  &:active,
+  &:focus {
+    background-color: $nyanza;
+    color: $background;
+    box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+  }
+
+  &:hover {
+    background-color: $nyanza;
+    color: $background;
+    box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+  }
+
+  &:disabled {
+    background-color: $text;
+  }
 }
