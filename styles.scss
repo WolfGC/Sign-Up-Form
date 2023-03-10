@@ -122,3 +122,10 @@ button {
     background-color: $text;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .form-container {
+    width: 360px;
+    height: 500px;
+  }
+}

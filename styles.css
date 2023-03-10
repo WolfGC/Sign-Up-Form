@@ -108,4 +108,11 @@ button:hover {
 }
 button:disabled {
   background-color: #c4c3ca;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-container {
+    width: 360px;
+    height: 500px;
+  }
 }/*# sourceMappingURL=styles.css.map */
