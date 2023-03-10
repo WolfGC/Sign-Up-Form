@@ -63,6 +63,20 @@ input[type=password] {
   border: none;
   transition: all 200ms linear;
   box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2);
+  color-scheme: dark;
+  -webkit-box-shadow: 0 0 0px 1000px #1f2029 inset;
+}
+
+input:not(input:-webkit-autofill)::-webkit-contacts-auto-fill-button {
+  background-color: #c4c3ca;
+}
+
+input:-webkit-autofill::-webkit-contacts-auto-fill-button {
+  background-color: #c4c3ca;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: #c4c3ca;
 }
 
 i {
