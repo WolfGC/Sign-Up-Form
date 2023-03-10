@@ -13,9 +13,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  min-height: 100vh;
-  min-height:-webkit-fill-available;
+  //width: 100%;
+  min-height: 95vh;
+  //min-height:-webkit-fill-available;
   background-color: $background;
   color: white;
 }
